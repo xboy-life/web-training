@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Facebook</title>
+        <style>
+            #f{
+                font-weight: 900;
+                color: blue;
+                font-size: 30px;
+            }
+            #h2{
+                font-weight: bold;
+            }
+            #h3{
+                font-weight: 100;
+                font-size: 15px;
+            }
+            #body{
+                border: 2PX SOLID gray;
+                margin:auto; 
+                width:60%;
+                padding: 10px;
+                
+            }
+            #sub{
+                background: rgb(40, 255, 40);
+                width: 35%;
+            }
+            #mn,#pw,#name{
+                width: 86%;
+                padding: 11px;
+            }
+            #fn,#ln{
+                width: 40%;
+                padding: 11px;
+            }
+            #b,#g{
+                float: left;
+                font-size: 12px;
+            }
+        </style>
+    </head>
+    <body style="text-align: center;">
+        <div id="f"><h1>facebook</h1></div>
+        <div id="body">
+            <h2 id="h2">Create a new account</h2>
+            <h3 id="h3">It's quick and easy</h3><hr>
+            <form>
+                <span id="name"><input type="text" id="fn" name="fn" placeholder="First name">     
+                    <input type="text" id="ln" name="ln" placeholder="Last name"></span>
+                <br><br><input type="text" id="mn" name="mn" placeholder="Mobile number or email"><br>
+                <br><input type="password" id="pw" name="pw" placeholder="New passwords"><br><br>
+                <span id="b">Birthday?</span><br>
+                <span><select id="day" name="day">
+                    <option value="Jan">January</option>
+                    <option value="Feb">February</option>
+                    <option value="Mar">March</option>
+                    <option value="Apr">April</option>
+                    <option value="May">May</option>
+                    <option value="Jun" selected>June</option>
+                    <option value="Jul">July</option>
+                    <option value="Aug">August</option>
+                    <option value="Sep">September</option>
+                    <option value="Oct">October</option>
+                    <option value="Nov">November</option>
+                    <option value="Dec">December</option>
+                </select>
+                <select id="date" name="date">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28" selected>28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                </select>
+                <input list="year" placeholder="2024">
+                <datalist id="year">
+                    <option value="2000">2000</option>
+                </datalist>
+                </span><br><br>
+                <span id="g">Gender?</span><br>
+                <span>
+                    Female<input type="radio" id="fm" name="fm"> 
+                    Male<input type="radio" id="m" name="m">
+                    Custom<input type="radio" id="c" name="c">
+                </span><br><br>
+                <input type="submit" id="sub" name="sub" value="Sign UP">
+            </form>
+        </div>
+    </body>
+</html>
