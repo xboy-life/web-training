@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day 9</title>
+        <style>
+            div.ib{
+                display: inline-block;
+                /* visibility: hidden; */
+                width: 50px;
+                margin: auto;
+            }
+            .static{
+                position: static;
+            }
+            .relative{
+                position: relative;
+                left: 100px;
+                top: 100px;
+            }
+            .fixed{
+                position: fixed;
+                top: 100px;
+                left: 100px;
+            }
+            .sticky{
+                position: sticky;
+                top: 0;
+                left: 100px;
+                background-color: aqua;
+            }
+            .absolute{
+                position: absolute;
+                bottom: 5px;
+                right: 5px;
+            }
+            #position-cover{
+                position: relative;
+            }
+            /* z-index:-12 */
+            .max{
+                max-width: 800px;
+            }
+            nav ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 200px;
+                background-color: red;
+            }
+            nav ul li a{
+                display: block;
+                color: black;
+                text-decoration: none;
+                padding: 8px 15px;
+            }
+            nav ul li a:hover{
+                background-color: blueviolet;
+                color: springgreen;
+            }
+            #hnav ul{
+                width: 100%;
+            }
+            #hnav ul li{
+                display: inline;
+            }
+            #hnav ul li a{
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <nav id="vnav" class="sticky">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <nav id="hnav" class="">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="ib">
+            hello
+        </div>
+        <div class="ib">
+            hii
+        </div>
+        <div id="position-cover">
+            <span class="static">this is static</span><br>
+            <span class="relative">this is relative</span><br>
+            <span class="fixed">this is fixed</span><br>
+            <span class="absolute">this is absolute</span>
+        </div>
+        <div class="">this is sticky</div>
+        <div class="max">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae at, laborum dignissimos quis provident eum necessitatibus mollitia perspiciatis aliquid fugiat aspernatur nihil earum itaque expedita, tempora, distinctio autem placeat cupiditate.</div>
+        <ul>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+        </ul>
+        <ul>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+        </ul>
+        <ul>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+        </ul>
+        <ul>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+        </ul>
+        <ul>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+        </ul>
+        <ul>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+        </ul>
+        <ul>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+        </ul>
+        <ul>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+        </ul>
+    </body>
+</html>
