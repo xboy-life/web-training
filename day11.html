@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day 11</title>  
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <style>
+            p{
+                color: aqua;
+                background-color: chocolate;
+            }
+            @media screen and  (min-width: 500px){
+                p{
+                    color: chocolate;
+                    background-color: aqua;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <p id="par">
+            this is a text.
+        </p>
+        <button onclick="myclick()">Click</button>
+        <input type="text" id="inp" onkeyup="inputChanged()">
+    </body>
+    <script>
+        function myclick(){
+        plag=document.getElementById('par');
+        plag.innerHTML="<a href='day10.html'>A Link</a>";
+        // document.getElementById('par').innerHTML="<a href='day10.html'>A Link</a>;"
+        }
+        // document.write("hello");
+        // window.alert("hello");
+        console.log("hello");
+        function inputChanged(){
+            var inputTag=document.getElementById('inp');
+            var par=document.getElementById('par');
+            par.textContent=inputTag.value;
+        }
+        function changed(){
+            var value=document.getElementById('inp').value;
+            // window.alert("the text you entered is "+value);
+            if(value=="blue"){
+                document.getElementById('par').style.color="blue";
+                document.getElementById('par').style.fontSize="50px";
+            }
+        }
+        document.getElementById('inp').addEventListener('change',changed);
+    </script>
+</html>
